@@ -1,0 +1,40 @@
+body {
+    --bg-color: #222;
+    --bg-color2: #0f0f0f;
+    --text-color: #d1d1d1;
+}
+
+@font-face {
+    font-family: RobotMono;
+    src: url(/FONT/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: RobotMono;
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+}
+
+.a-container {
+    display: flex;
+    background: radial-gradient( var(--bg-color), var(--bg-color2));
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    font-size: 50px;
+    font-weight: bolder;
+    margin: auto;
+    cursor: pointer;
+    transition: transform .5s;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+a:hover {
+    transform: translateY(-10px) scale(1.2);
+}
+
